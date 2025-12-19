@@ -3,27 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jay Verma | Data Scientist</title>
+  <title>Jay Verma | Applied Machine Learning Engineer</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0; padding: 0;
       background: #f9f9f9; color: #333;
+      line-height: 1.6;
     }
     header {
       background: #222; color: white;
-      padding: 1.5rem;
+      padding: 1.8rem;
       text-align: center;
     }
     section {
-      padding: 2rem 5%;
+      padding: 2rem 6%;
+      background: white;
+      margin-bottom: 1rem;
     }
     h2 {
       border-bottom: 2px solid #ccc;
-      padding-bottom: 0.5rem;
+      padding-bottom: 0.4rem;
     }
-    .project {
-      margin-bottom: 1.5rem;
+    .item {
+      margin-bottom: 1.4rem;
     }
     footer {
       background: #222; color: white;
@@ -32,96 +35,133 @@
     a { color: #0066cc; text-decoration: none; }
   </style>
 </head>
+
 <body>
 
-  <header>
-    <h1>Jay Verma</h1>
-    <p>Data Scientist | NLP & AI Specialist | LLM Researcher</p>
-  </header>
+<header>
+  <h1>Jay Verma</h1>
+  <p>Applied Machine Learning Engineer | Computer Vision • NLP • Video Systems</p>
+</header>
 
-  <section>
-    <h2>About Me</h2>
+<section>
+  <h2>About Me</h2>
+  <p>
+    I am an applied machine learning engineer with hands-on experience building
+    production-oriented computer vision, video analytics, and NLP systems.
+    My work focuses on end-to-end ML pipelines—covering data processing,
+    model development, evaluation, and deployment—under real-world constraints
+    such as latency, noise, and system correctness.
+  </p>
+</section>
+
+<section>
+  <h2>Core Skills</h2>
+  <ul>
+    <li><strong>Programming & Systems:</strong> Python, SQL, Git, Linux, FFmpeg</li>
+    <li><strong>Machine Learning:</strong> PyTorch, feature engineering, model evaluation, inference optimization</li>
+    <li><strong>Computer Vision & Video:</strong> YOLO, DeepSORT, OpenCV, Kalman Filters, HLS, GOP analysis</li>
+    <li><strong>NLP & LLMs:</strong> Transformers, tokenization, NER, text classification, PEFT (LoRA, QLoRA), RLHF (PPO)</li>
+    <li><strong>Deployment & Tooling:</strong> Streamlit, Hugging Face, automation pipelines</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Professional Experience</h2>
+
+  <div class="item">
+    <strong>Machine Learning Intern — Spectatr.ai</strong>
     <p>
-      I'm a data scientist specializing in natural language processing, large language models (LLMs), and applied machine learning.
-      I build efficient, research-driven solutions for tasks like text classification, named entity recognition, recommendation systems, and model alignment.
+      Worked on real-time computer vision and video analytics systems for sports content.
+      Built and optimized detection, tracking, and shot-boundary pipelines,
+      with a strong focus on temporal accuracy, false-positive reduction,
+      and automated video processing at scale.
     </p>
-  </section>
+  </div>
+</section>
 
-  <section>
-    <h2>Skills</h2>
-    <ul>
-      <li><strong>Languages & Tools:</strong> Python, SQL, R, Git, Excel, Power BI, Jupyter</li>
-      <li><strong>Libraries:</strong> Hugging Face Transformers, scikit-learn, pandas, numpy, seaborn, Plotly</li>
-      <li><strong>Core Competencies:</strong> NLP, LLMs, Prompt Engineering, PEFT, Transformers, RLHF, Deep Learning, Network Analysis, Statistical Modeling</li>
-    </ul>
-  </section>
+<section>
+  <h2>Selected Projects</h2>
 
-  <section>
-    <h2>Experience</h2>
+  <div class="item">
+    <strong>Football Player & Ball Tracking (YOLO + DeepSORT)</strong>
+    <p>
+      Developed a real-time multi-object tracking pipeline for football analytics,
+      including player identification, heatmap generation, and occlusion handling
+      using Kalman filtering.
+    </p>
+  </div>
 
-    <div class="project">
-      <strong><a href="https://github.com/vjay98/smart-lead-scorer" target="_blank">AI-Readiness LeadGen Tool</a></strong>
-      <p>Built a lead scoring tool using clustering and custom metrics to identify the top 5% most AI-ready companies from a 150K+ dataset. Deployed an interactive Streamlit app for visualization and filtering. Delivered the full solution within a 5-hour challenge.</p>
-    </div>
+  <div class="item">
+    <strong>Shot Boundary Detection & Frame-Accurate HLS Cutting</strong>
+    <p>
+      Designed a hybrid ML + heuristic system using 12 temporal and histogram-based features
+      to detect shot transitions with ~95% accuracy and enable frame-accurate video clipping.
+    </p>
+  </div>
 
-    <div class="project">
-      <strong><a href="https://github.com/vjay98/nlp_with_transformers/blob/main/04_multilingual_ner.ipynb" target="_blank">Multilingual NER with QLoRA</a></strong>
-      <p>Fine-tuned XLM-RoBERTa on PAN-X for named entity recognition using 4-bit quantization and PEFT with Hugging Face Transformers.</p>
-    </div>
+  <div class="item">
+    <strong><a href="https://github.com/vjay98/smart-lead-scorer" target="_blank">
+      AI-Readiness Lead Scoring Tool</a></strong>
+    <p>
+      Built a clustering-based lead scoring system to identify the top 5% AI-ready companies
+      from a 150K+ dataset; delivered an interactive Streamlit dashboard within a time-boxed challenge.
+    </p>
+  </div>
 
-    <div class="project">
-      <strong><a href="https://github.com/vjay98/nlp_with_transformers/blob/main/02_text_classification.ipynb" target="_blank">Tweet Emotion Classification</a></strong>
-      <p>Built an end-to-end DistilBERT pipeline to classify tweets into six emotions. Included preprocessing, training, evaluation, and inference.</p>
-    </div>
+  <div class="item">
+    <strong><a href="https://github.com/vjay98/nlp_with_transformers/blob/main/04_multilingual_ner.ipynb" target="_blank">
+      Multilingual NER with XLM-R + QLoRA</a></strong>
+    <p>
+      Fine-tuned XLM-R on PAN-X for multilingual named entity recognition
+      using parameter-efficient fine-tuning with 4-bit quantization.
+    </p>
+  </div>
 
-    <div class="project">
-      <strong><a href="https://github.com/vjay98/llm-a_deep_dive/blob/main/prompt_vs_pretrain_finetune_in_text_classification.ipynb" target="_blank">Prompt Tuning vs. Fine-Tuning</a></strong>
-      <p>Compared prompt tuning and full fine-tuning techniques for text classification. Analyzed compute trade-offs and task generalization.</p>
-    </div>
+  <div class="item">
+    <strong>Tweet Emotion Classification (DistilBERT)</strong>
+    <p>
+      Built an end-to-end NLP pipeline for emotion classification,
+      covering preprocessing, training, evaluation, and inference.
+    </p>
+  </div>
 
-    <div class="project">
-      <strong><a href="https://github.com/vjay98/llm-a_deep_dive/blob/main/pts.ipynb" target="_blank">Transformer from Scratch</a></strong>
-      <p>Implemented key components of Transformer models from scratch in PyTorch, including tokenization, embeddings, and self-attention.</p>
-    </div>
+  <div class="item">
+    <strong>Transformer Model from Scratch</strong>
+    <p>
+      Implemented core Transformer components in PyTorch, including tokenization,
+      embeddings, and self-attention, to develop a low-level understanding of LLM architectures.
+    </p>
+  </div>
 
-    <div class="project">
-      <strong><a href="https://github.com/vjay98/restaurant_recommendation" target="_blank">Hybrid Restaurant Recommender</a></strong>
-      <p>Built a recommendation system combining collaborative and content-based filtering using cosine similarity and matrix factorization.</p>
-    </div>
+  <div class="item">
+    <strong>Hybrid Restaurant Recommendation System</strong>
+    <p>
+      Designed a recommendation engine combining collaborative and content-based filtering
+      using cosine similarity and matrix factorization.
+    </p>
+  </div>
 
-    <div class="project">
-      <strong><a href="https://github.com/vjay98/sql/blob/main/Basics.ipynb" target="_blank">SQL for Customer Segmentation</a></strong>
-      <p>Performed advanced SQL analysis with CTEs and window functions for churn prediction, segmentation, and cohort analysis.</p>
-    </div>
-  </section>
+</section>
 
-  <section>
-    <h2>Education</h2>
-    <ul>
-      <li><strong>MSc in Computational Science</strong> – Università della Svizzera italiana, Switzerland</li>
-      <li><strong>BSc (Hons.) in Mathematics</strong> – Manipal University Jaipur, India</li>
-    </ul>
-  </section>
+<section>
+  <h2>Education</h2>
+  <ul>
+    <li><strong>MSc in Computational Science</strong> — Università della Svizzera italiana, Switzerland</li>
+    <li><strong>BSc (Hons.) in Mathematics</strong> — Manipal University Jaipur, India</li>
+  </ul>
+</section>
 
-  <section>
-    <h2>Certifications</h2>
-    <ul>
-      <li>Data Analyst in Python – Dataquest</li>
-      <li>Business Analytics with Excel – Simplilearn</li>
-      <li>Power BI for Beginners – Simplilearn</li>
-    </ul>
-  </section>
+<section>
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:vjay1998@outlook.com">vjay1998@outlook.com</a></p>
+  <p>GitHub: <a href="https://github.com/vjay98" target="_blank">github.com/vjay98</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/jay-verma-6039a217b/" target="_blank">
+    linkedin.com/in/jay-verma</a></p>
+</section>
 
-  <section>
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:vjay1998@outlook.com">vjay1998@outlook.com</a></p>
-    <p>GitHub: <a href="https://github.com/vjay98" target="_blank">vjay98</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/jay-verma-6039a217b/" target="_blank">jay-verma</a></p>
-  </section>
-
-  <footer>
-    <p>© 2025 Jay Verma. All rights reserved.</p>
-  </footer>
+<footer>
+  <p>© 2025 Jay Verma</p>
+</footer>
 
 </body>
 </html>
